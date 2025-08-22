@@ -4,23 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Airbnb-Clone</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <link rel="stylesheet" href="./style.css">
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 
 <body>
-    <div class=" bg-white flex justify-between">
-        <div class=" flex gap-2">
+    <div class=" bg-white flex justify-around items-center">
+        <div class=" flex gap-2 items-center">
             <img src="/images/airbnb.png" alt="" class=" w-10">
-            <p class="text-2xl"><b>Airbnb</b></p>
+            <p class="text-2xl text-red-400"><b>Airbnb</b></p>
         </div>
-        <div class=" flex gap-3">
-            <button>Become a host</button>
-            <img src="/images/internet-icon" alt="" class="w-10">
-            <img src="/images/hambaga-menu-icon.png alt=">
+        <div class=" flex gap-6 ">
+            <div class=" flex items-center">
+                <img src="/images/home.png" alt="" class=" w-12">
+                 <p class=" "> <b>Home</b></p>
+            </div>
+            <div class=" flex items-center">
+                <img src="/images/exprience.png" alt="" class=" w-12">
+                 <p class=" "> <b>Exprience</b></p>
+            </div>
+            <div class=" flex items-center">
+                <img src="/images/service.png" alt="" class=" w-12">
+                 <p class=""> <b>Services</b></p>
+            </div>
         </div>
+        <div class=" flex gap-4 items-center">
+            <button><b>Become a host</b></button>
+           <i class="fa-solid fa-globe"></i>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <div class=" flex justify-center gap-10 border-2 border-gray-400 rounded-2xl ml-30 mr-30 mt-4 sticky top-0">
+        <div class="p-3 rounded-2xl hover:bg-gray-200">
+            <b>Where</b>
+            <p>Search destination</p>
+        </div>
+        <div class="p-3 rounded-2xl hover:bg-gray-200">
+            <b>Check in </b>
+            <p>Add Dates</p>
+        </div>
+        <div class="p-3 rounded-2xl hover:bg-gray-200">
+            <b>Check out</b>
+            <p>Add Dates</p>
+        </div>
+        <div class="p-3 rounded-2xl hover:bg-gray-200 flex gap-4">
+           <div>
+             <b>Who</b>
+            <p>Add guests</p>
+           </div>
+             <div class=" p-3 bg-red-400 rounded-2xl items-center flex m-2 text-white">
+            <button><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+        </div>
+        </div>
+       
+
     </div>
 </body>
 
